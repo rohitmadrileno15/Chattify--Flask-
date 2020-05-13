@@ -11,7 +11,7 @@ from flask import Flask, render_template, request
 
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'ROHIT'
+app.config['SECRET_KEY'] = 'test'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
 
 db = SQLAlchemy(app)
@@ -19,10 +19,10 @@ db = SQLAlchemy(app)
 login_manager = LoginManager(app)
 
 pusher_client = pusher.Pusher(
-  app_id='992493',
-  key='9f0dc80f484368ce2bb5',
-  secret="e3dbe6dedfb68a980660",
-  cluster='ap2',
+  app_id='ID',
+  key='KEY',
+  secret="SECRET",
+  cluster='CLS',
   ssl=True
 )
 
